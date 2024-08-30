@@ -1,0 +1,18 @@
+modules:
+  macro:
+    - key: popup-test-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: popup-test
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/69978354-8f89-4c6a-abfc-7b9520a417fb
